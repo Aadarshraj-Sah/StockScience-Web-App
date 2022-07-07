@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+	<h1>Market News</h1><br/>
+	
+<div class="container">
+    <form action="{% url 'news' %}" class="form-inline my-2 my-lg-0" method="POST">
+        {% csrf_token %}    
+    <input class="form-control mr-sm-2" type="search" placeholder="Search stock news" aria-label="Search by ticker" name="ticker">
+    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SEARCH</button>
+  </form>
+    </br>
+    </br>
+	<div class="row">
+		{% for url, news, desc, img, time, source in mylist %}	
+			<div class="card text-white bg-dark mb-3" style="width: 18rem;">
+			  <a href="{{ url }}"><img href="{{url }}" src="{{ img }}" class="card-img-top" alt="{{ source }}" class="list-group-item"></a>
+			  <div class="card-body">
+			    <h5 class="card-title">{{ news }}</h5>
+			    <p class="card-text">{{desc }}</p>
+			  </div>
+			  <ul class="list-group list-group-flush">
+			  	<em><li class="list-group-item text-white bg-dark mb-3">{{ source }}</em>, {{ time }}</li>
+			  </ul>
+			  <div class="card-body">
+			  	<a href="{{ url }}" class="btn btn-outline-primary">Read More...</a>
+			  </div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+	
+	<br/>
+	
+	<!-- <ul>
+		{% for x in api.data %}
+			<li>{{ x.title }}</li>
+		{% endfor %}
+	</ul>
+
+	{{ api.data }}	 -->
+
+{% endblock %}
