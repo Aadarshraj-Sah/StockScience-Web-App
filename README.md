@@ -10,6 +10,7 @@ Web App for Stock Quotes &amp; Live News Stream; Building a Portfolio Using Pyth
 
 ## Video Demo
 For a demo of the code and how the web app works, please see this screen recording:
+
 https://user-images.githubusercontent.com/77449847/178000982-654b5a12-8e2c-49e4-9a15-b8cc58526002.mp4
 
 
