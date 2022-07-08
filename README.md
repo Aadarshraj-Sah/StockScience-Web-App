@@ -9,7 +9,8 @@ Web App for Stock Quotes &amp; Live News Stream; Building a Portfolio Using Pyth
 * Adding charts visualization and implementing machine learning to analyze stocks will be the second goal, when I expand this app in the near future.
 
 ## Video Demo
-For a demo of how the web app works, please see this screen recording:
+For a demo of how the web app works, please see this screen recording:  
+Unmute for better experience :)
 
 https://user-images.githubusercontent.com/77449847/178000982-654b5a12-8e2c-49e4-9a15-b8cc58526002.mp4
 
